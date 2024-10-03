@@ -86,10 +86,10 @@ app.post("/api/produtosporcoes", async (req, res) => {
 });
 
 // Rota para listar produtos
-app.get("/api/produtos", async (req, res) => {
-  const produtos = await prisma.produto.findMany();
-  res.json(produtos);
-});
+// app.get("/api/produtos", async (req, res) => {
+//   const produtos = await prisma.produto.findMany();
+//   res.json(produtos);
+// });
 
 // app.get("/api/produtosporcoes", async (req, res) => {
 //   const produtos = await prisma.produtoporcoes.findMany();
