@@ -20,3 +20,27 @@ model Produto {
   preco       Float
   categoria   String
 }
+
+model Produtobebidas {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  descricao   String
+  preco       Float
+  categoria   String
+}
+
+model Produtoscombos {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  descricao   String
+  preco       Float
+  categoria   String
+}
+
+model Produtoporcoes {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  descricao   String
+  preco       Float
+  categoria   String
+}
