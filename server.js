@@ -91,15 +91,15 @@ app.get("/api/produtos", async (req, res) => {
   res.json(produtos);
 });
 
-app.get("/api/produtosporcoes", async (req, res) => {
-  const produtos = await prisma.produtoporcoes.findMany();
-  res.json(produtos);
-});
+// app.get("/api/produtosporcoes", async (req, res) => {
+//   const produtos = await prisma.produtoporcoes.findMany();
+//   res.json(produtos);
+// });
 
-app.get("/api/produtoscombos", async (req, res) => {
-  const produtos = await prisma.produtoscombos.findMany();
-  res.json(produtos);
-});
+// app.get("/api/produtoscombos", async (req, res) => {
+//   const produtos = await prisma.produtoscombos.findMany();
+//   res.json(produtos);
+// });
 
 app.get("/api/produtosbebidas", async (req, res) => {
   const produtos = await prisma.produtobebidas.findMany();
