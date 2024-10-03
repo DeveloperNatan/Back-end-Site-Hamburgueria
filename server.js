@@ -33,7 +33,7 @@ app.post("/api/produtosbebidas", async (req, res) => {
   const { nome, descricao, preco, categoria } = req.body;
 
   try {
-    const produto = await prisma.produto.create({
+    const produto = await prisma.produtobebidas.create({
       data: {
         nome,
         descricao,
@@ -52,7 +52,7 @@ app.post("/api/produtoscombos", async (req, res) => {
   const { nome, descricao, preco, categoria } = req.body;
 
   try {
-    const produto = await prisma.produto.create({
+    const produto = await prisma.produtoscombos.create({
       data: {
         nome,
         descricao,
@@ -71,7 +71,7 @@ app.post("/api/produtosporcoes", async (req, res) => {
   const { nome, descricao, preco, categoria } = req.body;
 
   try {
-    const produto = await prisma.produto.create({
+    const produto = await prisma.produtoporcoes.create({
       data: {
         nome,
         descricao,
